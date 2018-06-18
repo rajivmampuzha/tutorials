@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>5.0.6.RELEASE</spring.version>
+		<spring.version>5.0.7.RELEASE</spring.version>
 		<mysql.version>8.0.11</mysql.version>
 		<java.version>1.8</java.version>
 	</properties>
@@ -40,9 +40,9 @@
 			<version>5.1.1</version>
 		</dependency>
 		<dependency>
-			<groupId>springframework</groupId>
+			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>1.2.6</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -52,7 +52,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>5.0.6.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -60,6 +60,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
 				<configuration>
 					<target>${java.version}</target>
 					<source>${java.version}</source>
@@ -67,14 +68,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<repositories>
-		<repository>
-			<id>spring-libs-snapshot</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/libs-snapshot</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 </project>
