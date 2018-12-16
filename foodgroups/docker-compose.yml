@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mysqldb:
+    container_name: foodgroupdb
+    image: mysql:5.7
+    volumes:
+    - $HOME/.mysql_data:/var/lib/mysql
+    restart: always
+    env_file: .mysql_env
+    ports:
+    - "3306:3306"
+  jetty:
+    container_name: foodgroup
+    build: .
+    ports:
+    - "8080:8080"
+    volumes:
+    - ./target/foodgroups-0.0.1-SNAPSHOT.war:/opt/jetty/app.war
+    entrypoint:
+    - java
+    - -jar
+    - jetty-runner.jar
+    - --port
+    - "8080"
+    - /opt/jetty/app.war
+    links:
+    - mysqldb

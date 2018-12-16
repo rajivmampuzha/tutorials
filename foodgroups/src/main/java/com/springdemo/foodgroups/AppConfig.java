@@ -10,10 +10,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import com.springdemo.foodgroups.dao.FoodGroupDao;
 
 @Configuration
+@EnableWebMvc
 @PropertySources({ @PropertySource(value = "classpath:application.properties", ignoreResourceNotFound = true), })
 public class AppConfig {
 	@Value("${mysql.url}")

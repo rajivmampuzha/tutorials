@@ -1,0 +1,4 @@
+MYSQL_ROOT_PASSWORD=my-secret-pw
+MYSQL_DATABASE=springdemodb
+MYSQL_USER=rajiv
+MYSQL_PASSWORD=rajiv123
