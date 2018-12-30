@@ -1,0 +1,10 @@
+CHAPTER-1
+Configure Atom editor
+---------------------
+1. Install emmet :- Html editor helper
+2. atom-beautify
+3. autocomplete-paths
+4. api-docs
+5. linter (This checks the style and syntax of code).
+   This is base package. Language specific linters has to installed.
+6. linter-csslint
