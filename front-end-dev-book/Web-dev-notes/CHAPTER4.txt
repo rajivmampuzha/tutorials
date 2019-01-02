@@ -1,0 +1,8 @@
+flexbox is a technique which allows same layout to adjust to the user's screen size.
+
+Display property
+-----
+inline items line up from left to right.
+Block elements line up vertically.
+
+Dispaly: flex make the flexible container. 

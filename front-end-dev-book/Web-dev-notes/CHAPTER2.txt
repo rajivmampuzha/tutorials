@@ -1,0 +1,9 @@
+Start the project using browser-sync
+------
+
+Go to project folder and execute below comment.
+
+browser-sync -s -f "stylesheets/*.css, *.html, img/*.jpg"
+
+-s instruct to start a local server
+-f for the files to watch.

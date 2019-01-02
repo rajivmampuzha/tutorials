@@ -1,0 +1,16 @@
+For CSS we use class names to select elements. For java scripts use data attributes.
+
+Data attributes starts with data-
+
+Technically we can use CSS class names for java script and use data elements for CSS. But not a best practice.
+
+
+Whenever we need to change the styles dynamically, one approach is to add a new class name to an ancestor component and declare styles as a combination.
+Eg.
+
+.hidden-detail .thumbnail-list{
+  flex-direction: column;
+  align-items: center;
+}
+
+These style will apply to .thumbnail-list class element only if the ancestor has hidden-detail class applied.

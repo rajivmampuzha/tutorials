@@ -1,0 +1,42 @@
+To create a style baseline include normalize.css from cdnjs.
+https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css
+
+This css to be loaded before all other CSS to make sure in all browsers the default values are loaded.
+
+Style has two parts.
+1. Selector
+2. Definition.
+
+Definition part specify the styles.
+Selector is the section which identifies the elements for which the defined style has to be applied.
+
+Styles will inherit from higher level tag to inner level tag.
+
+Relationship selectors
+----------------------
+Select elements based on the relationship of those elements with other elements.
+Either class or element relationship can be used.
+
+descendent selectors :- Any element of one type that is descendent of another.
+  body span {
+    //Any span element under body will get selected.
+  }
+  body .thumbnail-title{
+  // any element with specified class which is descendent of body.
+  }
+
+Child selectors :- Select the immediate children of a type. It uses a combiner >
+    li > span {
+    //Any span which is immediate child of li.
+    }
+Sibling selector :- uses ~ combiner.
+    header ~ ul {
+     //any ul element preceded by header element. Ul element coming before header will not be selected.
+    }
+Adjacent sibling selector :- Uses + combiner.
+    li + li {
+      //Select all li elements which is immediately preceded by another li element.
+    }
+
+
+Class select uses . predix. ID selector uses # as prefix. ID selector has higher specificity than class selector and type selector has lowest. 

@@ -1,0 +1,12 @@
+.list-style{
+  list-style-type: none;
+}
+.list-item-style{
+  display: inline;
+  padding: 4px 10px;
+  border: 0;
+  float: left;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}

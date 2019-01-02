@@ -1,0 +1,6 @@
+<meta name="viewport" content="width=devise-width, initial-scale=1">
+Will set the viewport equivalent to devise width.
+
+Refer
+https://philipwalton.github.io/solved-by-flexbox
+ 
